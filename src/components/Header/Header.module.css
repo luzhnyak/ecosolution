@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.wrapperBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+@media only screen and (min-width: 1270px) {
+  .header {
+    padding-top: 24px;
+  }
+}

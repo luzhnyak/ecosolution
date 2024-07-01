@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.wrapperBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.socialLink {
+  color: var(--primary-color);
+}
+
+.socialLink:hover,
+.socialLink:active {
+  color: var(--secondary-color);
+}

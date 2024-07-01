@@ -1,0 +1,38 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  width: 141px;
+  height: 40px;
+  padding: 0 4px 0 4px;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.btn:hover > .iconWrapper,
+.btn:active > .iconWrapper {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
