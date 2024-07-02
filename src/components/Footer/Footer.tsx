@@ -1,6 +1,6 @@
 import css from "./Footer.module.css";
-import Logo from "../Logo/Logo";
-import MoveUpBtn from "../MoveUpBtn/LearnMoreBtn";
+import Logo from "../core/Logo/Logo";
+import MoveUpBtn from "../core/MoveUpBtn/LearnMoreBtn";
 
 const Footer = () => {
   return (

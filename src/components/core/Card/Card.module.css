@@ -1,0 +1,28 @@
+.wrapper {
+  width: 274px;
+  background-color: #eaedf1;
+  padding: 48px 24px 24px 24px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 94px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 19px;
+  letter-spacing: -0.04em;
+}

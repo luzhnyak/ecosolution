@@ -7,16 +7,6 @@
   cursor: pointer;
 }
 
-.wrapper:hover > .title,
-.wrapper:active > .title {
-  color: var(--secondary-color);
-}
-
-.img {
-  width: 31px;
-  height: 18px;
-}
-
 .title {
   width: 170px;
   height: 40px;
@@ -27,6 +17,17 @@
   line-height: 36px;
   letter-spacing: -0.04em;
   color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+.wrapper:hover > .title,
+.wrapper:active > .title {
+  color: var(--secondary-color);
+}
+
+.img {
+  width: 31px;
+  height: 18px;
 }
 
 .text {

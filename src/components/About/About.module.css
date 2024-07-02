@@ -1,0 +1,47 @@
+.section {
+  margin-top: 200px;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  width: 485px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.headerTextWrapper {
+  width: 363px;
+  padding-top: 8px;
+  margin-right: 96px;
+}
+
+.headerText {
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+  line-height: 19px;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--secondary-color);
+  padding: 12px 0 36px 0;
+  letter-spacing: -0.04em;
+}
+
+.subHeaderRight {
+  width: 456px;
+  display: flex;
+  justify-content: space-between;
+}

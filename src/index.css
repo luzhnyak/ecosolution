@@ -20,8 +20,21 @@
 body {
   font-style: normal;
   font-weight: 400;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Fira Sans", sans-serif;
+  color: var(--primary-color);
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -29,6 +42,13 @@ button {
 }
 
 a {
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+a:hover,
+a:active {
+  color: var(--secondary-color);
   transition: color 0.3s;
 }
 
@@ -45,10 +65,10 @@ a {
   }
 }
 
-@media only screen and (min-width: 1270px) {
+@media only screen and (min-width: 1280px) {
   .container {
-    width: 1270px;
+    width: 1280px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }

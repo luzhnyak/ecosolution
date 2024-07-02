@@ -1,0 +1,42 @@
+.titleWrapper {
+  width: 491px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 17px;
+  margin-bottom: 120px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 164px;
+  line-height: 164px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.lineWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.line {
+  width: 1px;
+  height: 87px;
+  border-right: 1px solid var(--secondary-color);
+}
+
+.kwh {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--primary-color);
+}

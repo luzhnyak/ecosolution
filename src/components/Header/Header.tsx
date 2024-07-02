@@ -1,8 +1,8 @@
 import css from "./Header.module.css";
-import BurgerBtn from "../BurgerBtn/BurgerBtn";
+import BurgerBtn from "../core/BurgerBtn/BurgerBtn";
 
-import Logo from "../Logo/Logo";
-import ToContactBtn from "../ToContactBtn/ToContactBtn";
+import Logo from "../core/Logo/Logo";
+import ToContactBtn from "../core/ToContactBtn/ToContactBtn";
 
 const Header = () => {
   return (
