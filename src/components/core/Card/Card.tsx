@@ -1,16 +1,18 @@
 import { FC } from "react";
 import css from "./Card.module.css";
+import Icon from "../Icon/Icon";
 
 interface IProps {
   title: string;
   text: string;
+  icon: string;
 }
 
-const Card: FC<IProps> = ({ title, text }) => {
+const Card: FC<IProps> = ({ title, text, icon }) => {
   return (
     <div className={css.wrapper}>
       <div className={css.titleWrapper}>
-        <img src="/icons/global-edit.svg" alt="icon" width={24} height={24} />
+        <Icon className={css.icon} name={icon} width={24} height={24} />
         <h3 className={css.title}>{title}</h3>
       </div>
 

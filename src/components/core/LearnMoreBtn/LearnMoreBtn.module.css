@@ -36,3 +36,8 @@
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
+
+.icon {
+  stroke: var(--primary-color);
+  fill: transparent;
+}

@@ -1,0 +1,78 @@
+.section {
+  margin-top: 0px;
+}
+
+.headerSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  margin-bottom: 124px;
+}
+
+.titleWrapper {
+  width: 398px;
+}
+
+.headerRight {
+  padding-left: 161px;
+  border-left: 1px solid var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.headerBtnsWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.counter {
+  display: flex;
+}
+
+.countCases {
+  width: 30px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.04em;
+  color: var(--primary-color);
+}
+
+.generalCases {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.04em;
+  color: var(--primary-color-25);
+}
+
+.btn {
+  width: 84px;
+  height: 84px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:active {
+  border: 1px solid var(--secondary-color);
+}
+
+.icon {
+  stroke: var(--primary-color);
+  fill: transparent;
+}
+
+.btn:hover .icon,
+.btn:active .icon {
+  stroke: var(--secondary-color);
+}
+
+.cardsWrapper {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 127px;
+}

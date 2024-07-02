@@ -1,5 +1,6 @@
 import { FC } from "react";
 import css from "./LearnMoreBtn.module.css";
+import Icon from "../Icon/Icon";
 
 interface IProps {
   title: string;
@@ -10,9 +11,9 @@ const LearnMoreBtn: FC<IProps> = ({ title }) => {
     <button className={css.btn}>
       {title}
       <div className={css.iconWrapper}>
-        <img
+        <Icon
           className={css.icon}
-          src="/icons/arrow-right.svg"
+          name="icon-arrow-right"
           width={16}
           height={16}
         />

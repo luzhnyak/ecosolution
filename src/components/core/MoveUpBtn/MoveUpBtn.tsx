@@ -1,11 +1,12 @@
+import Icon from "../Icon/Icon";
 import css from "./MoveUpBtn.module.css";
 
 const MoveUpBtn = () => {
   return (
     <button className={css.btn}>
-      <img
+      <Icon
         className={css.icon}
-        src="/icons/arrow-right.svg"
+        name="icon-arrow-right"
         width={16}
         height={16}
       />

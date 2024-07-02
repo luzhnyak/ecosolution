@@ -20,3 +20,8 @@
 .socialLink:active {
   color: var(--secondary-color);
 }
+
+.icon {
+  stroke: currentColor;
+  fill: transparent;
+}

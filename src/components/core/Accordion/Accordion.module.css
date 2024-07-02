@@ -1,0 +1,44 @@
+.details {
+  border-top: 1px solid var(--secondary-color);
+  padding: 24px 0;
+}
+
+.summary {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.04em;
+}
+
+.details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.details summary::marker {
+  display: none;
+}
+
+.icon {
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
+details[open] summary .icon {
+  stroke: var(--primary-color);
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  margin-top: 24px;
+}

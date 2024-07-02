@@ -23,10 +23,12 @@ const Values = () => {
         <Card
           title="Openness"
           text="to the world, people, new ideas and projects"
+          icon="icon-maximize-circle"
         />
         <Card
           title="Responsibility"
           text="we are aware that the results of our work have an impact on our lives and the lives of future generations"
+          icon="icon-global-edit"
         />
         <img
           className={css.img}
@@ -44,10 +46,12 @@ const Values = () => {
         <Card
           title="Innovation"
           text="we use the latest technology to implement non-standard solutions"
+          icon="icon-cpu-charge"
         />
         <Card
           title="Quality"
           text="we do not strive to be the first among others, but we want to be the best in our business"
+          icon="icon-ranking"
         />
       </div>
     </section>

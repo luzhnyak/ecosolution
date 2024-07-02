@@ -26,3 +26,8 @@
   line-height: 19px;
   letter-spacing: -0.04em;
 }
+
+.icon {
+  stroke: var(--primary-color);
+  fill: transparent;
+}

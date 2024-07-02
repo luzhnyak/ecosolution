@@ -16,3 +16,9 @@
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+
+.icon {
+  stroke: var(--primary-color);
+  fill: transparent;
+  transform: rotate(270deg);
+}

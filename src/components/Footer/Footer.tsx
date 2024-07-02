@@ -1,6 +1,7 @@
 import css from "./Footer.module.css";
 import Logo from "../core/Logo/Logo";
-import MoveUpBtn from "../core/MoveUpBtn/LearnMoreBtn";
+import MoveUpBtn from "../core/MoveUpBtn/MoveUpBtn";
+import Icon from "../core/Icon/Icon";
 
 const Footer = () => {
   return (
@@ -12,17 +13,17 @@ const Footer = () => {
       <div>
         <div className={css.wrapperBtns}>
           <a className={css.socialLink} href="">
-            <img
-              src="/icons/facebook.svg"
-              alt="facebook"
+            <Icon
+              className={css.icon}
+              name="icon-facebook"
               width={24}
               height={24}
             />
           </a>
           <a className={css.socialLink} href="">
-            <img
-              src="/icons/instagram.svg"
-              alt="instagram"
+            <Icon
+              className={css.icon}
+              name="icon-instagram"
               width={24}
               height={24}
             />
