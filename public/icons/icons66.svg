@@ -93,9 +93,8 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M8 16h16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M16 24v-16"></path>
 </symbol>
-<symbol id="icon-add" viewBox="0 0 32 32">
+<symbol id="icon-minus" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M8 16h16"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7143" d="M16 24v-16"></path>
 </symbol>
 </defs>
 </svg>

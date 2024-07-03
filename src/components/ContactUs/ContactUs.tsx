@@ -3,7 +3,7 @@ import css from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <section>
+    <section className={css.dection}>
       <Title title="Contact us" />
     </section>
   );

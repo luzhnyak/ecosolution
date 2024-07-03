@@ -32,14 +32,14 @@ const Values = () => {
         />
         <img
           className={css.img}
-          src="../../../public/imgs/values/wind-farms-fields 1.jpg"
+          src="/imgs/values/wind-farms-fields 1.jpg"
           alt=""
           width={596}
         />
 
         <img
           className={css.img}
-          src="../../../public/imgs/values/man-worker-firld-by-solar-panels 1.jpg"
+          src="/imgs/values/man-worker-firld-by-solar-panels 1.jpg"
           alt=""
           width={596}
         />
