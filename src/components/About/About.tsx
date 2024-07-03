@@ -23,7 +23,7 @@ const About = () => {
           <span>ecosolution © 2023</span>
         </div>
       </div>
-      <img src="/imgs/about/wind-turbine-clean-energy.jpg" />
+      <img src="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg" />
     </section>
   );
 };

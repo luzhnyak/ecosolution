@@ -5,7 +5,7 @@ function Logo() {
     <div className={css.wrapper}>
       <img
         className={css.img}
-        src="/icons/logo.svg"
+        src="/ecosolution/icons/logo.svg"
         alt="Ecosolution"
         width={31}
         height={18}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Accordion from "../core/Accordion/Accordion";
 import Title from "../core/Title/Title";
 import css from "./Faq.module.css";
+import ToContactBtn from "../core/ToContactBtn/ToContactBtn";
 
 const questions = [
   {
@@ -67,6 +68,10 @@ const Faq = () => {
       </div>
       <div className={css.right}>
         <Title title="Frequently Asked Questions" />
+        <div className={css.textWrapper}>
+          <p className={css.text}>Didn't find the answer to your question?</p>
+          <ToContactBtn title="Contact Us" />
+        </div>
       </div>
     </section>
   );
