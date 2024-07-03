@@ -1,0 +1,56 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 596px;
+  grid-template-rows: auto auto;
+  margin-bottom: 120px;
+}
+
+.titleWrapper {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.contactItem {
+  margin-bottom: 32px;
+}
+
+.contactTitle {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.contactValue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.04em;
+}
+
+.wrapperBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.socialLink {
+  color: var(--primary-color);
+}
+
+.socialLink:hover,
+.socialLink:active {
+  color: var(--secondary-color);
+}
+
+.icon {
+  stroke: currentColor;
+  fill: transparent;
+}

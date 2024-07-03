@@ -1,5 +1,6 @@
 import css from "./About.module.css";
-import LearnMoreBtn from "../core/LearnMoreBtn/LearnMoreBtn";
+
+import WhiteBtn from "../core/LearnMoreBtn/WhiteBtn";
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <LearnMoreBtn title="Learn more" />
+          <WhiteBtn title="Learn more" />
         </div>
       </div>
       <div className={css.subHeader}>
