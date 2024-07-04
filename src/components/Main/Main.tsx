@@ -29,7 +29,7 @@ const Main = () => {
         <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
         <div className={css.subHeaderRight}>
           <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-          <span>ecosolution © 2023</span>
+          <span className={css.ecosolution}>ecosolution © 2023</span>
         </div>
       </div>
       <img

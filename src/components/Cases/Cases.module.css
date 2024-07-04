@@ -3,15 +3,11 @@
 }
 
 .headerSection {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto; */
-  margin-bottom: 124px;
+  margin-bottom: 19px;
 }
 
 .headerRight {
   padding-left: 0px;
-  border-left: 1px solid var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -44,8 +40,8 @@
 }
 
 .btn {
-  width: 84px;
-  height: 84px;
+  width: 66px;
+  height: 66px;
   border: 1px solid var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
@@ -69,7 +65,11 @@
 
 .cardsWrapper {
   display: block;
-  margin-bottom: 127px;
+  margin-bottom: 36px;
+}
+
+.secondCardWrapper {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -86,22 +86,31 @@
 
   .headerRight {
     padding-left: 9px;
-  }
-
-  .btn {
-    width: 66px;
-    height: 66px;
+    border-left: 1px solid var(--secondary-color);
   }
 
   .cardsWrapper {
     display: flex;
     gap: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 107px;
+  }
+
+  .secondCardWrapper {
+    display: block;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .titleWrapper {
     width: 398px;
+  }
+
+  .btn {
+    width: 84px;
+    height: 84px;
+  }
+
+  .cardsWrapper {
+    margin-bottom: 127px;
   }
 }

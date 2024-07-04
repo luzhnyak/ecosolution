@@ -1,14 +1,19 @@
 .section {
+  display: grid;
+  grid-template-areas: "title" "questions" "btn";
+  margin-bottom: 36px;
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 137px;
+.titleWrapper {
+  grid-area: title;
+}
+
+.questionsWrapper {
+  grid-area: questions;
 }
 
 .textWrapper {
+  grid-area: btn;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +22,8 @@
 
 .text {
   margin-bottom: 12px;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: -0.04em;
 }
 
@@ -26,15 +31,32 @@
   .section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 48px;
-  }
-
-  .section {
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "questions title"
+      "questions btn";
     gap: 24px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    gap: 48px;
+    margin-bottom: 120px;
   }
 
-  .right {
-    padding-left: 0px;
+  .titleWrapper {
+    padding-left: 137px;
+  }
+
+  .textWrapper {
+    width: 536px;
+    padding-left: 137px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 29px;
   }
 }

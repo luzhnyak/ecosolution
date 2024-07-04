@@ -1,5 +1,5 @@
 .section {
-  margin-top: 200px;
+  margin-top: 146px;
 }
 
 .headerSection {
@@ -34,21 +34,27 @@
 
 .subHeader {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto;
   grid-template-rows: auto auto;
+  justify-content: center;
+  row-gap: 8px;
   border-top: 1px solid var(--secondary-color);
-  padding: 12px 0 36px 0;
+  padding: 24px 0 36px 0;
   letter-spacing: -0.04em;
 }
 
 .subHeaderRight {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .img {
   width: 100%;
+}
+
+.ecosolution {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,6 +79,19 @@
     width: 342px;
     padding-top: 8px;
     margin-right: 0px;
+  }
+
+  .subHeader {
+    justify-content: flex-start;
+    padding: 12px 0 36px 0;
+  }
+
+  .subHeaderRight {
+    justify-content: space-between;
+  }
+
+  .ecosolution {
+    display: block;
   }
 }
 

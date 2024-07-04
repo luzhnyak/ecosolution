@@ -14,8 +14,10 @@ const Footer = () => {
 
   return (
     <footer className={css.footer}>
-      <div>
-        <Logo />
+      <div className={css.topRow}>
+        <div className={css.wrapperLogo}>
+          <Logo />
+        </div>
         <div className={css.wrapperBtns}>
           <a className={css.socialLink} href="">
             <Icon
@@ -43,7 +45,7 @@ const Footer = () => {
           />
         </button>
       </div>
-      <div>
+      <div className={css.bottomRow}>
         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
         <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
         <p>ecosolution © 2023</p>

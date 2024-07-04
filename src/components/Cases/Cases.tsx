@@ -99,12 +99,14 @@ const Cases = () => {
           date={case1.date}
           image={case1.img}
         />
-        <CaseCard
-          title={case2.title}
-          text={case2.text}
-          date={case2.date}
-          image={case2.img}
-        />
+        <div className={css.secondCardWrapper}>
+          <CaseCard
+            title={case2.title}
+            text={case2.text}
+            date={case2.date}
+            image={case2.img}
+          />
+        </div>
       </div>
     </section>
   );

@@ -9,16 +9,16 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 36px;
-  margin: 36px 48px 24px 48px;
+  margin: 24px 12px 20px 12px;
   border-bottom: 1px solid var(--secondary-color);
 }
 
 .title {
-  width: 357px;
+  width: 200px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: -0.04em;
 }
 
@@ -44,7 +44,7 @@
 .textWrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 48px 36px 48px;
+  padding: 0 12px 12px 12px;
 }
 
 .text {
@@ -80,7 +80,7 @@
   }
 
   .textWrapper {
-    padding: 12px;
+    padding: 0 12px 12px 12px;
   }
 }
 
