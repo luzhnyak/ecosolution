@@ -39,6 +39,7 @@ const About = () => {
           srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
           alt="wind farms fields"
           width={596}
+          height={339}
         />
 
         <img
@@ -47,6 +48,7 @@ const About = () => {
           srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
           alt="man worker firld by solar panels"
           width={596}
+          height={339}
         />
         <Card
           title="Innovation"

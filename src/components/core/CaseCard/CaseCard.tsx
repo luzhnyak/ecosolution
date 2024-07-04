@@ -18,6 +18,8 @@ const CaseCard: FC<IProps> = ({ title, text, image, image2x, date }) => {
         src={image}
         srcSet={`${image} 1x, ${image2x} 2x`}
         alt={title}
+        width={596}
+        height={296}
       />
       <div className={css.titleWrapper}>
         <h3 className={css.title}>{title}</h3>

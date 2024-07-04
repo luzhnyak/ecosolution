@@ -32,12 +32,31 @@ const Main = () => {
           <span className={css.ecosolution}>ecosolution © 2023</span>
         </div>
       </div>
-      <img
-        className={css.img}
-        src="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg"
-        srcSet="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg 1x, /ecosolution/imgs/about/wind-turbine-clean-energy@2x.jpg 2x"
-        alt="wind turbine clean energy"
-      />
+      <picture>
+        <source
+          srcSet="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg 1x, 
+                  /ecosolution/imgs/about/wind-turbine-clean-energy@2x.jpg 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcSet="/ecosolution/imgs/about/tablet-wind-turbine-clean-energy.jpg 1x, 
+                  /ecosolution/imgs/about/tablet-wind-turbine-clean-energy@2x.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcSet="/ecosolution/imgs/about/mobile-wind-turbine-clean-energy.jpg 1x, 
+                  /ecosolution/imgs/about/mobile-wind-turbine-clean-energy@2x.jpg 2x"
+          media="(max-width:767px)"
+        />
+        <img
+          className={css.img}
+          src="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg"
+          srcSet="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg 1x, /ecosolution/imgs/about/wind-turbine-clean-energy@2x.jpg 2x"
+          alt="wind turbine clean energy"
+          width={1240}
+          height={524}
+        />
+      </picture>
     </section>
   );
 };
