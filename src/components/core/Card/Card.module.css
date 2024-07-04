@@ -1,5 +1,5 @@
 .wrapper {
-  width: 274px;
+  width: 148px;
   background-color: #eaedf1;
   padding: 48px 24px 24px 24px;
 }
@@ -14,11 +14,11 @@
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -30,4 +30,50 @@
 .icon {
   stroke: var(--primary-color);
   fill: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 159px;
+    padding: 12px;
+  }
+
+  .titleWrapper {
+    gap: 8px;
+    padding-bottom: 51px;
+    margin-bottom: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    width: 274px;
+    padding: 48px 24px 24px 24px;
+  }
+
+  .titleWrapper {
+    gap: 8px;
+    padding-bottom: 94px;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

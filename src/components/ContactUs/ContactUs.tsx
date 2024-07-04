@@ -1,11 +1,14 @@
 import ContactForm from "../core/ContactForm/ContactForm";
 import Icon from "../core/Icon/Icon";
+import { useScroll } from "../core/ScrollContext";
 import Title from "../core/Title/Title";
 import css from "./ContactUs.module.css";
 
 const ContactUs = () => {
+  const { contactsRef } = useScroll();
+
   return (
-    <section className={css.section}>
+    <section className={css.section} ref={contactsRef}>
       <div className={css.titleWrapper}>
         <Title title="Contact us" />
       </div>

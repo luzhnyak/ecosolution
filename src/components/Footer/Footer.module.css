@@ -1,7 +1,7 @@
 .footer {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: 1px solid var(--secondary-color);
@@ -24,4 +24,29 @@
 .icon {
   stroke: currentColor;
   fill: transparent;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.iconUp {
+  stroke: var(--primary-color);
+  fill: transparent;
+  transform: rotate(270deg);
 }

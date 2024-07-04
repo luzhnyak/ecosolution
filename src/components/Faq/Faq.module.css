@@ -1,8 +1,4 @@
 .section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 48px;
 }
 
 .right {
@@ -24,4 +20,21 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.04em;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 48px;
+  }
+
+  .section {
+    gap: 24px;
+  }
+
+  .right {
+    padding-left: 0px;
+  }
 }

@@ -12,7 +12,7 @@ interface IProps {
 const CaseCard: FC<IProps> = ({ title, text, image, date }) => {
   return (
     <div className={css.wrapper}>
-      <img src={image} alt={title} />
+      <img className={css.img} src={image} alt={title} />
       <div className={css.titleWrapper}>
         <h3 className={css.title}>{title}</h3>
         <button className={css.btn}>

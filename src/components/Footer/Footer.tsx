@@ -1,16 +1,21 @@
 import css from "./Footer.module.css";
 import Logo from "../core/Logo/Logo";
-import MoveUpBtn from "../core/MoveUpBtn/MoveUpBtn";
 import Icon from "../core/Icon/Icon";
+import { useScroll } from "../core/ScrollContext";
 
 const Footer = () => {
+  const { mainRef } = useScroll();
+
+  const scrollTo = (ref: React.RefObject<HTMLDivElement> | null) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className={css.footer}>
       <div>
         <Logo />
-        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-      </div>
-      <div>
         <div className={css.wrapperBtns}>
           <a className={css.socialLink} href="">
             <Icon
@@ -29,11 +34,18 @@ const Footer = () => {
             />
           </a>
         </div>
-
-        <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
+        <button className={css.btn} onClick={() => scrollTo(mainRef)}>
+          <Icon
+            className={css.iconUp}
+            name="icon-arrow-right"
+            width={16}
+            height={16}
+          />
+        </button>
       </div>
       <div>
-        <MoveUpBtn />
+        <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
+        <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
         <p>ecosolution © 2023</p>
       </div>
     </footer>

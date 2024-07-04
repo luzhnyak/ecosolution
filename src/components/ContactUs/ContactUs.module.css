@@ -1,7 +1,5 @@
 .section {
-  display: grid;
-  grid-template-columns: 1fr 596px;
-  grid-template-rows: auto auto;
+  display: block;
   margin-bottom: 120px;
 }
 
@@ -53,4 +51,38 @@
 .icon {
   stroke: currentColor;
   fill: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 596px;
+    grid-template-rows: auto auto;
+    margin-bottom: 120px;
+  }
+
+  .contactTitle {
+    margin-bottom: 8px;
+  }
+
+  .contactValue {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section {
+    grid-template-columns: 1fr 596px;
+    margin-bottom: 120px;
+  }
+
+  .contactTitle {
+    margin-bottom: 16px;
+  }
+
+  .contactValue {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

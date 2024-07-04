@@ -1,7 +1,6 @@
 .wrapper {
-  width: 596px;
-  height: 623px;
-  padding: 48px;
+  width: 100%;
+  padding: 36px 12px;
   background-color: #eaedf1;
 }
 
@@ -11,7 +10,7 @@
 
 .label {
   display: block;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,6 +27,9 @@
   margin-top: 12px;
   background-color: transparent;
   border-bottom: 1px solid var(--secondary-color);
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.04em;
 }
 
 textarea.input {
@@ -36,7 +38,7 @@ textarea.input {
 }
 
 .input::placeholder {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -58,4 +60,38 @@ textarea.input {
 .btnWrapper {
   display: flex;
   justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 342px;
+    height: 559px;
+    padding: 36px 24px;
+  }
+
+  .input {
+    height: 31px;
+    margin-top: 8px;
+  }
+
+  textarea.input {
+    height: 147px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    width: 596px;
+    height: 623px;
+    padding: 48px;
+  }
+
+  .input {
+    height: 33px;
+    margin-top: 12px;
+  }
+
+  textarea.input {
+    height: 149px;
+  }
 }

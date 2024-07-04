@@ -3,6 +3,7 @@ import Accordion from "../core/Accordion/Accordion";
 import Title from "../core/Title/Title";
 import css from "./Faq.module.css";
 import ToContactBtn from "../core/ToContactBtn/ToContactBtn";
+import { useScroll } from "../core/ScrollContext";
 
 const questions = [
   {
@@ -45,15 +46,18 @@ const questions = [
 const Faq = () => {
   const [openId, setOpenId] = useState<number | null>(null);
 
-  console.log("openId", openId);
+  const { faqRef } = useScroll();
 
   const toggleDetails = (id: number | null) => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <section className={css.section}>
-      <div className={css.left}>
+    <section className={css.section} ref={faqRef}>
+      <div className={css.titleWrapper}>
+        <Title title="Frequently Asked Questions" />
+      </div>
+      <div className={css.questionsWrapper}>
         {questions.map(({ id, question, answer }) => {
           return (
             <Accordion
@@ -66,12 +70,9 @@ const Faq = () => {
           );
         })}
       </div>
-      <div className={css.right}>
-        <Title title="Frequently Asked Questions" />
-        <div className={css.textWrapper}>
-          <p className={css.text}>Didn't find the answer to your question?</p>
-          <ToContactBtn title="Contact Us" />
-        </div>
+      <div className={css.textWrapper}>
+        <p className={css.text}>Didn't find the answer to your question?</p>
+        <ToContactBtn title="Contact Us" />
       </div>
     </section>
   );

@@ -1,29 +1,62 @@
+import Card from "../core/Card/Card";
+import { useScroll } from "../core/ScrollContext";
+import Title from "../core/Title/Title";
 import css from "./About.module.css";
 
-import WhiteBtn from "../core/LearnMoreBtn/WhiteBtn";
-
 const About = () => {
+  const { aboutRef } = useScroll();
+
   return (
-    <section className={css.section}>
+    <section className={css.section} ref={aboutRef}>
       <div className={css.headerSection}>
-        <h1 className={css.title}>RENEWABLE ENERGY For any task</h1>
+        <div className={css.titleWrapper}>
+          <Title title="Main values of our company" />
+        </div>
         <div className={css.headerTextWrapper}>
           <p className={css.headerText}>
-            Development and implementation of renewable non-polluting energy
-            sources, generating power generation using energy wind, sun, water,
-            biomass
+            EcoSolution envisions a world where sustainable energy solutions
+            power a brighter and cleaner future for all. We aspire to be at the
+            forefront of the global shift towards renewable energy, leading the
+            way in innovative technologies that harness the power of nature to
+            meet the world's energy needs.
           </p>
-          <WhiteBtn title="Learn more" />
         </div>
       </div>
-      <div className={css.subHeader}>
-        <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
-        <div className={css.subHeaderRight}>
-          <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-          <span>ecosolution © 2023</span>
-        </div>
+      <div className={css.cardWrapper}>
+        <Card
+          title="Openness"
+          text="to the world, people, new ideas and projects"
+          icon="icon-maximize-circle"
+        />
+        <Card
+          title="Responsibility"
+          text="we are aware that the results of our work have an impact on our lives and the lives of future generations"
+          icon="icon-global-edit"
+        />
+        <img
+          className={css.img}
+          src="/ecosolution/imgs/values/wind-farms-fields 1.jpg"
+          alt=""
+          width={596}
+        />
+
+        <img
+          className={css.img}
+          src="/ecosolution/imgs/values/man-worker-firld-by-solar-panels 1.jpg"
+          alt=""
+          width={596}
+        />
+        <Card
+          title="Innovation"
+          text="we use the latest technology to implement non-standard solutions"
+          icon="icon-cpu-charge"
+        />
+        <Card
+          title="Quality"
+          text="we do not strive to be the first among others, but we want to be the best in our business"
+          icon="icon-ranking"
+        />
       </div>
-      <img src="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg" />
     </section>
   );
 };

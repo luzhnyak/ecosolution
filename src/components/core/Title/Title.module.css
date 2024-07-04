@@ -1,9 +1,23 @@
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 28px;
   text-transform: uppercase;
   text-align: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }

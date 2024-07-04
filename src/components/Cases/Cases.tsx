@@ -3,6 +3,7 @@ import CaseCard from "../core/CaseCard/CaseCard";
 import Icon from "../core/Icon/Icon";
 import Title from "../core/Title/Title";
 import css from "./Cases.module.css";
+import { useScroll } from "../core/ScrollContext";
 
 const cases = [
   {
@@ -47,6 +48,8 @@ const Cases = () => {
   const case1 = cases[caseIdx];
   const case2 = cases[caseIdx === 4 ? 0 : caseIdx + 1];
 
+  const { casesRef } = useScroll();
+
   const caseIncrementHandle = () => {
     let newIdx = caseIdx + 1;
     if (newIdx > 4) newIdx = 0;
@@ -59,7 +62,7 @@ const Cases = () => {
   };
 
   return (
-    <section>
+    <section ref={casesRef}>
       <div className={css.headerSection}>
         <div className={css.titleWrapper}>
           <Title title="Successful cases of our company" />

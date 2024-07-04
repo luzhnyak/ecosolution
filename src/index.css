@@ -11,8 +11,8 @@
   --secondary-color: #97d28b;
   --secondary-color-25: rgba(151, 210, 139, 0.25);
   --burger-color: #dcefd8;
-  --wрite-color: #ffffff;
-  --wрite-color-25: rgba(255, 255, 255, 0.25);
+  --white-color: #ffffff;
+  --white-color-25: rgba(255, 255, 255, 0.25);
   --error-color: #d28b8b;
   --placeholder-color: #bdbdbd;
 }
@@ -53,6 +53,8 @@ a:active {
 }
 
 .container {
+  /* width: 360px; */
+  position: relative;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -71,4 +73,8 @@ a:active {
     margin: 0 auto;
     padding: 0 20px;
   }
+}
+
+.body-scroll-lock {
+  overflow: hidden;
 }

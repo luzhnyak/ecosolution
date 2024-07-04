@@ -10,7 +10,9 @@ const Header = () => {
       <Logo />
       <div className={css.wrapperBtns}>
         <BurgerBtn />
-        <ToContactBtn title="Get in touch" />
+        <div className={css.toContactBtnWrapper}>
+          <ToContactBtn title="Get in touch" />
+        </div>
       </div>
     </header>
   );
