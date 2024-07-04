@@ -123,7 +123,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
               </li>
             </ul>
             <div className={css.wrapperBtns}>
-              <a className={css.socialLink} href="">
+              <a className={css.socialLink} href="" title="facebook">
                 <Icon
                   className={css.icon}
                   name="icon-facebook"
@@ -131,7 +131,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   height={24}
                 />
               </a>
-              <a className={css.socialLink} href="">
+              <a className={css.socialLink} href="" title="instagram">
                 <Icon
                   className={css.icon}
                   name="icon-instagram"

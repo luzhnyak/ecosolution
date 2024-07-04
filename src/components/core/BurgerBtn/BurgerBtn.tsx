@@ -8,7 +8,11 @@ const BurgerBtn = () => {
 
   return (
     <>
-      <button className={css.btn} onClick={() => setIsShowMenu(!isShowMenu)}>
+      <button
+        className={css.btn}
+        onClick={() => setIsShowMenu(!isShowMenu)}
+        aria-label="Menu"
+      >
         <Icon className={css.icon} name="icon-menu" width={16} height={16} />
       </button>
       {isShowMenu && <Menu onClose={() => setIsShowMenu(false)} />}

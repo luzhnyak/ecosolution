@@ -52,7 +52,7 @@ const ContactUs = () => {
         <div className={css.contactItem}>
           <p className={css.contactTitle}>Social Networks:</p>
           <div className={css.wrapperBtns}>
-            <a className={css.socialLink} href="">
+            <a className={css.socialLink} href="" title="facebook">
               <Icon
                 className={css.icon}
                 name="icon-facebook"
@@ -60,7 +60,7 @@ const ContactUs = () => {
                 height={24}
               />
             </a>
-            <a className={css.socialLink} href="">
+            <a className={css.socialLink} href="" title="instagram">
               <Icon
                 className={css.icon}
                 name="icon-instagram"

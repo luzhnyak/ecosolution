@@ -19,7 +19,7 @@ const Footer = () => {
           <Logo />
         </div>
         <div className={css.wrapperBtns}>
-          <a className={css.socialLink} href="">
+          <a className={css.socialLink} href="" title="facebook">
             <Icon
               className={css.icon}
               name="icon-facebook"
@@ -27,7 +27,7 @@ const Footer = () => {
               height={24}
             />
           </a>
-          <a className={css.socialLink} href="">
+          <a className={css.socialLink} href="" title="instagram">
             <Icon
               className={css.icon}
               name="icon-instagram"
@@ -36,7 +36,11 @@ const Footer = () => {
             />
           </a>
         </div>
-        <button className={css.btn} onClick={() => scrollTo(mainRef)}>
+        <button
+          className={css.btn}
+          onClick={() => scrollTo(mainRef)}
+          aria-label="Scroll to main"
+        >
           <Icon
             className={css.iconUp}
             name="icon-arrow-right"

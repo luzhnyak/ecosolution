@@ -82,6 +82,7 @@
   }
 
   .subHeader {
+    grid-template-columns: repeat(2, 1fr);
     justify-content: flex-start;
     padding: 12px 0 36px 0;
   }

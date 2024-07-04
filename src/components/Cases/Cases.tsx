@@ -11,6 +11,7 @@ const cases = [
     title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
     text: "Wind Power for auto field irrigation",
     img: "/ecosolution/imgs/cases/beautiful-view-1.jpg",
+    img2x: "/ecosolution/imgs/cases/beautiful-view-1@2x.jpg",
     date: "July 2023",
   },
   {
@@ -18,6 +19,7 @@ const cases = [
     title: "Zhytomyr city Private Enterprise “Bosch”",
     text: "Solar Panels for industrial use",
     img: "/ecosolution/imgs/cases/beautiful-view-2.jpg",
+    img2x: "/ecosolution/imgs/cases/beautiful-view-2@2x.jpg",
     date: "November 2023",
   },
   {
@@ -25,6 +27,7 @@ const cases = [
     title: "Rivne city Private Enterprise “Biotech”",
     text: "Thermal modules",
     img: "/ecosolution/imgs/cases/beautiful-view-3.jpg",
+    img2x: "/ecosolution/imgs/cases/beautiful-view-3@2x.jpg",
     date: "October 2023",
   },
   {
@@ -32,6 +35,7 @@ const cases = [
     title: "Kherson city Private Enterprise “HealthyFarm”",
     text: "Wind power",
     img: "/ecosolution/imgs/cases/beautiful-view-4.jpg",
+    img2x: "/ecosolution/imgs/cases/beautiful-view-4@2x.jpg",
     date: "September 2021",
   },
   {
@@ -39,6 +43,7 @@ const cases = [
     title: "Zaporizhia city Private Enterprise “Biotech”",
     text: "Mini nuclear stations",
     img: "/ecosolution/imgs/cases/beautiful-view-5.jpg",
+    img2x: "/ecosolution/imgs/cases/beautiful-view-5@2x.jpg",
     date: "May 2021",
   },
 ];
@@ -73,7 +78,11 @@ const Cases = () => {
             <span className={css.generalCases}>/05</span>
           </div>
           <div className={css.headerBtnsWrapper}>
-            <button className={css.btn} onClick={caseDecrementHandle}>
+            <button
+              className={css.btn}
+              onClick={caseDecrementHandle}
+              aria-label="Prev"
+            >
               <Icon
                 className={css.icon}
                 name="icon-arrow-left"
@@ -81,7 +90,11 @@ const Cases = () => {
                 height={36}
               />
             </button>
-            <button className={css.btn} onClick={caseIncrementHandle}>
+            <button
+              className={css.btn}
+              onClick={caseIncrementHandle}
+              aria-label="Next"
+            >
               <Icon
                 className={css.icon}
                 name="icon-arrow-right"
@@ -98,6 +111,7 @@ const Cases = () => {
           text={case1.text}
           date={case1.date}
           image={case1.img}
+          image2x={case1.img2x}
         />
         <div className={css.secondCardWrapper}>
           <CaseCard
@@ -105,6 +119,7 @@ const Cases = () => {
             text={case2.text}
             date={case2.date}
             image={case2.img}
+            image2x={case2.img2x}
           />
         </div>
       </div>

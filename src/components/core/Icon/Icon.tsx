@@ -1,5 +1,5 @@
 import { FC } from "react";
-import sprite from "/icons/icons66.svg";
+import sprite from "/icons/icons.svg";
 
 interface IProps {
   name: string;

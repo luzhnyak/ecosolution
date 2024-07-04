@@ -35,6 +35,8 @@ const Main = () => {
       <img
         className={css.img}
         src="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg"
+        srcSet="/ecosolution/imgs/about/wind-turbine-clean-energy.jpg 1x, /ecosolution/imgs/about/wind-turbine-clean-energy@2x.jpg 2x"
+        alt="wind turbine clean energy"
       />
     </section>
   );

@@ -6,16 +6,22 @@ interface IProps {
   title: string;
   text: string;
   image: string;
+  image2x: string;
   date: string;
 }
 
-const CaseCard: FC<IProps> = ({ title, text, image, date }) => {
+const CaseCard: FC<IProps> = ({ title, text, image, image2x, date }) => {
   return (
     <div className={css.wrapper}>
-      <img className={css.img} src={image} alt={title} />
+      <img
+        className={css.img}
+        src={image}
+        srcSet={`${image} 1x, ${image2x} 2x`}
+        alt={title}
+      />
       <div className={css.titleWrapper}>
         <h3 className={css.title}>{title}</h3>
-        <button className={css.btn}>
+        <button className={css.btn} aria-label="More">
           <Icon
             className={css.icon}
             name="icon-arrow-right-top"
