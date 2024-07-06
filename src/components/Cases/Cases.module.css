@@ -49,7 +49,7 @@
 }
 
 .btn:hover,
-.btn:active {
+.btn:focus {
   border: 1px solid var(--secondary-color);
 }
 
@@ -59,7 +59,7 @@
 }
 
 .btn:hover .icon,
-.btn:active .icon {
+.btn:focus .icon {
   stroke: var(--secondary-color);
 }
 

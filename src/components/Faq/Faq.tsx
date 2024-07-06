@@ -44,7 +44,7 @@ const questions = [
 ];
 
 const Faq = () => {
-  const [openId, setOpenId] = useState<number | null>(null);
+  const [openId, setOpenId] = useState<number | null>(1);
 
   const { faqRef } = useScroll();
 

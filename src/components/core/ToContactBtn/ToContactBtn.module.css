@@ -15,13 +15,13 @@
 }
 
 .btn:hover,
-.btn:active {
+.btn:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 
 .btn:hover > .icon,
-.btn:active > .icon {
+.btn:focus > .icon {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }

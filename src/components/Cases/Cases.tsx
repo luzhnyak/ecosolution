@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import CaseCard from "../core/CaseCard/CaseCard";
 import Icon from "../core/Icon/Icon";
 import Title from "../core/Title/Title";
 import css from "./Cases.module.css";
 import { useScroll } from "../core/ScrollContext";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import { Swiper as SwiperType } from "swiper";
+import "swiper/css";
 
 const cases = [
   {
@@ -31,7 +36,7 @@ const cases = [
     date: "October 2023",
   },
   {
-    id: 1,
+    id: 4,
     title: "Kherson city Private Enterprise “HealthyFarm”",
     text: "Wind power",
     img: "/ecosolution/imgs/cases/beautiful-view-4.jpg",
@@ -39,7 +44,7 @@ const cases = [
     date: "September 2021",
   },
   {
-    id: 1,
+    id: 5,
     title: "Zaporizhia city Private Enterprise “Biotech”",
     text: "Mini nuclear stations",
     img: "/ecosolution/imgs/cases/beautiful-view-5.jpg",
@@ -50,21 +55,10 @@ const cases = [
 
 const Cases = () => {
   const [caseIdx, setCaseIdx] = useState(0);
-  const case1 = cases[caseIdx];
-  const case2 = cases[caseIdx === 4 ? 0 : caseIdx + 1];
+
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const { casesRef } = useScroll();
-
-  const caseIncrementHandle = () => {
-    let newIdx = caseIdx + 1;
-    if (newIdx > 4) newIdx = 0;
-    setCaseIdx(newIdx);
-  };
-  const caseDecrementHandle = () => {
-    let newIdx = caseIdx - 1;
-    if (newIdx < 0) newIdx = 4;
-    setCaseIdx(newIdx);
-  };
 
   return (
     <section ref={casesRef}>
@@ -80,7 +74,7 @@ const Cases = () => {
           <div className={css.headerBtnsWrapper}>
             <button
               className={css.btn}
-              onClick={caseDecrementHandle}
+              onClick={() => swiperRef.current?.slidePrev()}
               aria-label="Prev"
             >
               <Icon
@@ -92,7 +86,7 @@ const Cases = () => {
             </button>
             <button
               className={css.btn}
-              onClick={caseIncrementHandle}
+              onClick={() => swiperRef.current?.slideNext()}
               aria-label="Next"
             >
               <Icon
@@ -106,22 +100,38 @@ const Cases = () => {
         </div>
       </div>
       <div className={css.cardsWrapper}>
-        <CaseCard
-          title={case1.title}
-          text={case1.text}
-          date={case1.date}
-          image={case1.img}
-          image2x={case1.img2x}
-        />
-        <div className={css.secondCardWrapper}>
-          <CaseCard
-            title={case2.title}
-            text={case2.text}
-            date={case2.date}
-            image={case2.img}
-            image2x={case2.img2x}
-          />
-        </div>
+        <Swiper
+          modules={[Navigation]}
+          slidesPerView={1}
+          loop={true}
+          onSlideChange={() => setCaseIdx(swiperRef?.current?.realIndex || 0)}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            1280: {
+              spaceBetween: 48,
+            },
+          }}
+        >
+          {cases.map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <CaseCard
+                  title={item.title}
+                  text={item.text}
+                  date={item.date}
+                  image={item.img}
+                  image2x={item.img2x}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </section>
   );

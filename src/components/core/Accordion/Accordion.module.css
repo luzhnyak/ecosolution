@@ -26,6 +26,7 @@
 }
 
 .icon {
+  display: block;
   stroke: var(--secondary-color);
   fill: var(--secondary-color);
 }

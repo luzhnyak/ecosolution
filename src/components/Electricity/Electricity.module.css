@@ -4,6 +4,7 @@
 }
 
 .counter {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,18 @@
   color: var(--secondary-color);
 }
 
+.value {
+  width: 256px;
+  text-align: left;
+}
+
+.kwh {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--primary-color);
+}
+
 .lineWrapper {
   display: flex;
   justify-content: center;
@@ -30,13 +43,6 @@
   width: 1px;
   height: 87px;
   border-right: 1px solid var(--secondary-color);
-}
-
-.kwh {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,6 +56,11 @@
     margin-bottom: 100px;
     font-size: 100px;
     line-height: 100px;
+  }
+
+  .value {
+    width: 536px;
+    text-align: left;
   }
 
   .kwh {
@@ -69,5 +80,9 @@
     margin-bottom: 120px;
     font-size: 164px;
     line-height: 164px;
+  }
+
+  .value {
+    width: 880px;
   }
 }

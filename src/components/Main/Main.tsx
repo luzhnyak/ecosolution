@@ -22,7 +22,9 @@ const Main = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </p>
-          <WhiteBtn title="Learn more" onClick={() => scrollTo(casesRef)} />
+          <div className={css.btnWrapper}>
+            <WhiteBtn title="Learn more" onClick={() => scrollTo(casesRef)} />
+          </div>
         </div>
       </div>
       <div className={css.subHeader}>

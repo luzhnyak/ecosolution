@@ -3,6 +3,7 @@ import css from "./ContactForm.module.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { toast } from "react-toastify";
 
 const schema = yup
   .object({
@@ -38,6 +39,7 @@ const ContactForm = () => {
 
   const onSubmit = (data: InputForm) => {
     console.log(data);
+    toast.success("Message sent successfully");
     reset();
   };
 

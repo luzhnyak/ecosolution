@@ -18,16 +18,15 @@ const Accordion: FC<IProps> = ({ question, answer, open, toggleDetails }) => {
         onClick={(e) => e.preventDefault()}
       >
         <summary className={css.summary} onClick={toggleDetails}>
-          <div>
+          <span>
             <Icon
               className={css.icon}
               name={open ? "icon-minus" : "icon-add"}
               width={28}
               height={28}
             />
-          </div>
-
-          {question}
+          </span>
+          <span> {question}</span>
         </summary>
         <p className={css.text}>{answer}</p>
       </details>

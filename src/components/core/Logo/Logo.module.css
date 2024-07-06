@@ -21,7 +21,7 @@
 }
 
 .wrapper:hover > .title,
-.wrapper:active > .title {
+.wrapper:focus > .title {
   color: var(--secondary-color);
 }
 

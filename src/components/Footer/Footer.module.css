@@ -40,7 +40,7 @@
 }
 
 .socialLink:hover,
-.socialLink:active {
+.socialLink:focus {
   color: var(--secondary-color);
 }
 
@@ -64,7 +64,7 @@
 }
 
 .btn:hover,
-.btn:active {
+.btn:focus {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }

@@ -47,13 +47,13 @@ a {
 }
 
 a:hover,
-a:active {
+a:focus {
   color: var(--secondary-color);
   transition: color 0.3s;
 }
 
 .container {
-  /* width: 360px; */
+  width: 360px;
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
