@@ -12,6 +12,7 @@ const BurgerBtn = () => {
         className={css.btn}
         onClick={() => setIsShowMenu(!isShowMenu)}
         aria-label="Menu"
+        type="button"
       >
         <Icon className={css.icon} name="icon-menu" width={16} height={16} />
       </button>

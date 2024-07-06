@@ -76,6 +76,7 @@ const Cases = () => {
               className={css.btn}
               onClick={() => swiperRef.current?.slidePrev()}
               aria-label="Prev"
+              type="button"
             >
               <Icon
                 className={css.icon}
@@ -88,6 +89,7 @@ const Cases = () => {
               className={css.btn}
               onClick={() => swiperRef.current?.slideNext()}
               aria-label="Next"
+              type="button"
             >
               <Icon
                 className={css.icon}

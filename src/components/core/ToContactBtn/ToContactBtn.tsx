@@ -17,7 +17,11 @@ const ToContactBtn: FC<IProps> = ({ title }) => {
   };
 
   return (
-    <button className={css.btn} onClick={() => scrollTo(contactsRef)}>
+    <button
+      className={css.btn}
+      onClick={() => scrollTo(contactsRef)}
+      type="button"
+    >
       {title}
       <Icon
         className={css.icon}

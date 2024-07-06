@@ -53,7 +53,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
       <div className={css.backdrop}>
         <div className="container">
           <div ref={modalRef} className={css.menu}>
-            <button className={css.btnClose} onClick={onClose}>
+            <button className={css.btnClose} onClick={onClose} type="button">
               <Icon
                 className={css.icon}
                 name="icon-close"
@@ -64,7 +64,11 @@ const Menu: FC<IProps> = ({ onClose }) => {
             </button>
             <ul className={css.list}>
               <li className={css.item}>
-                <button className={css.link} onClick={() => scrollTo(mainRef)}>
+                <button
+                  className={css.link}
+                  onClick={() => scrollTo(mainRef)}
+                  type="button"
+                >
                   Main
                   <Icon
                     className={css.icon}
@@ -75,7 +79,11 @@ const Menu: FC<IProps> = ({ onClose }) => {
                 </button>
               </li>
               <li className={css.item}>
-                <button className={css.link} onClick={() => scrollTo(aboutRef)}>
+                <button
+                  className={css.link}
+                  onClick={() => scrollTo(aboutRef)}
+                  type="button"
+                >
                   About
                   <Icon
                     className={css.icon}
@@ -86,7 +94,11 @@ const Menu: FC<IProps> = ({ onClose }) => {
                 </button>
               </li>
               <li className={css.item}>
-                <button className={css.link} onClick={() => scrollTo(casesRef)}>
+                <button
+                  className={css.link}
+                  onClick={() => scrollTo(casesRef)}
+                  type="button"
+                >
                   Cases
                   <Icon
                     className={css.icon}
@@ -97,7 +109,11 @@ const Menu: FC<IProps> = ({ onClose }) => {
                 </button>
               </li>
               <li className={css.item}>
-                <button className={css.link} onClick={() => scrollTo(faqRef)}>
+                <button
+                  className={css.link}
+                  onClick={() => scrollTo(faqRef)}
+                  type="button"
+                >
                   FAQ
                   <Icon
                     className={css.icon}
@@ -111,6 +127,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                 <button
                   className={css.link}
                   onClick={() => scrollTo(contactsRef)}
+                  type="button"
                 >
                   Contact Us
                   <Icon
@@ -123,7 +140,13 @@ const Menu: FC<IProps> = ({ onClose }) => {
               </li>
             </ul>
             <div className={css.wrapperBtns}>
-              <a className={css.socialLink} href="" title="facebook">
+              <a
+                className={css.socialLink}
+                href="https://www.facebook.com/"
+                title="facebook"
+                target="_blank"
+                rel="nofollow"
+              >
                 <Icon
                   className={css.icon}
                   name="icon-facebook"
@@ -131,7 +154,13 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   height={24}
                 />
               </a>
-              <a className={css.socialLink} href="" title="instagram">
+              <a
+                className={css.socialLink}
+                href="https://www.instagram.com/"
+                title="instagram"
+                target="_blank"
+                rel="nofollow"
+              >
                 <Icon
                   className={css.icon}
                   name="icon-instagram"

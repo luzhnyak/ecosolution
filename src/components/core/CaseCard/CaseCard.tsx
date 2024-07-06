@@ -23,7 +23,7 @@ const CaseCard: FC<IProps> = ({ title, text, image, image2x, date }) => {
       />
       <div className={css.titleWrapper}>
         <h3 className={css.title}>{title}</h3>
-        <button className={css.btn} aria-label="More">
+        <button className={css.btn} aria-label="More" type="button">
           <Icon
             className={css.icon}
             name="icon-arrow-right-top"

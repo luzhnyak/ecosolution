@@ -19,7 +19,13 @@ const Footer = () => {
           <Logo />
         </div>
         <div className={css.wrapperBtns}>
-          <a className={css.socialLink} href="" title="facebook">
+          <a
+            className={css.socialLink}
+            href="https://www.facebook.com/"
+            title="facebook"
+            target="_blank"
+            rel="nofollow"
+          >
             <Icon
               className={css.icon}
               name="icon-facebook"
@@ -27,7 +33,13 @@ const Footer = () => {
               height={24}
             />
           </a>
-          <a className={css.socialLink} href="" title="instagram">
+          <a
+            className={css.socialLink}
+            href="https://www.instagram.com/"
+            title="instagram"
+            target="_blank"
+            rel="nofollow"
+          >
             <Icon
               className={css.icon}
               name="icon-instagram"
@@ -40,6 +52,7 @@ const Footer = () => {
           className={css.btn}
           onClick={() => scrollTo(mainRef)}
           aria-label="Scroll to main"
+          type="button"
         >
           <Icon
             className={css.iconUp}
