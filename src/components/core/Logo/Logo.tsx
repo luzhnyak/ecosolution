@@ -2,7 +2,7 @@ import css from "./Logo.module.css";
 
 function Logo() {
   return (
-    <a className={css.wrapper} href="/">
+    <a className={css.wrapper} href="/ecosolution">
       <img
         className={css.img}
         src="/ecosolution/icons/logo.svg"

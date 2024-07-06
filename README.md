@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Ecosolution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Main page screenshot](/public/imgs/screenshot.jpg)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+Landing page "Development and implementation of renewable, ecologically clean energy sources."
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[LIVE PAGE](https://luzhnyak.github.io/ecosolution/)
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+`HTML/CSS` `TypeScript` `React` `React hook form & Yup` `React toastify` `Swiper`
+
+## Materials
+
+- [Layout](https://www.figma.com/design/pTbhAbEXjsofeQHmtIE2tK/Ecosolution?node-id=1-2&t=PhW1JD9VAiaRTLch-0)
+
+## Setup
+
+To run this project, install it locally using npm:
+
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+$ cd ../ecosolution
+$ npm install
+$ npm run dev
+```

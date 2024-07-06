@@ -36,6 +36,9 @@
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 66px;
   height: 66px;
   border: 1px solid var(--primary-color);
@@ -97,6 +100,10 @@
 @media only screen and (min-width: 1280px) {
   .titleWrapper {
     width: 398px;
+  }
+
+  .headerRight {
+    padding-left: 161px;
   }
 
   .btn {
