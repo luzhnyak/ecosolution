@@ -60,9 +60,13 @@ a:focus {
 }
 
 .main {
-  margin-top: 222px;
+  padding-top: 222px;
 }
 
+.section {
+  margin-top: 36px;
+  scroll-margin-top: 120px;
+}
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -71,7 +75,12 @@ a:focus {
   }
 
   .main {
-    margin-top: 240px;
+    padding-top: 240px;
+  }
+
+  .section {
+    margin-top: 100px;
+    scroll-margin-top: 120px;
   }
 }
 
@@ -83,12 +92,17 @@ a:focus {
   }
 
   .main {
-    margin-top: 264px;
+    padding-top: 264px;
+  }
+
+  .section {
+    margin-top: 120px;
+    scroll-margin-top: 120px;
   }
 }
 
 .body-scroll-lock {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .is-current {

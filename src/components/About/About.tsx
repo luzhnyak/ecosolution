@@ -7,7 +7,7 @@ const About = () => {
   const { aboutRef } = useScroll();
 
   return (
-    <section className={css.section} ref={aboutRef} id="about">
+    <section className="section" ref={aboutRef} id="about">
       <div className={css.headerSection}>
         <div className={css.titleWrapper}>
           <Title title="Main values of our company" />
@@ -38,26 +38,50 @@ const About = () => {
           />
         </li>
         <li className={css.imgItem}>
-          <img
-            className={css.img}
-            src="/ecosolution/imgs/values/wind-farms-fields.jpg"
-            srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
-            alt="wind farms fields"
-            width={596}
-            height={339}
-            loading="lazy"
-          />
+          <picture>
+            <source
+              srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, 
+                  /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
+              media="(min-width:1280px)"
+            />
+            <source
+              srcSet="/ecosolution/imgs/values/tablet-wind-farms-fields.jpg 1x, 
+                  /ecosolution/imgs/values/tablet-wind-farms-fields@2x.jpg 2x"
+              media="(max-width:1279px)"
+            />
+            <img
+              className={css.img}
+              src="/ecosolution/imgs/values/wind-farms-fields.jpg"
+              srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
+              alt="wind farms fields"
+              width={596}
+              height={339}
+              loading="lazy"
+            />
+          </picture>
         </li>
         <li className={css.imgItem}>
-          <img
-            className={css.img}
-            src="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg"
-            srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
-            alt="man worker firld by solar panels"
-            width={596}
-            height={339}
-            loading="lazy"
-          />
+          <picture>
+            <source
+              srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, 
+                  /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
+              media="(min-width:1280px)"
+            />
+            <source
+              srcSet="/ecosolution/imgs/values/tablet-man-worker-firld-by-solar-panels.jpg 1x, 
+                  /ecosolution/imgs/values/tablet-man-worker-firld-by-solar-panels@2x.jpg 2x"
+              media="(max-width:1279px)"
+            />
+            <img
+              className={css.img}
+              src="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg"
+              srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
+              alt="man worker firld by solar panels"
+              width={596}
+              height={339}
+              loading="lazy"
+            />
+          </picture>
         </li>
         <li>
           <Card

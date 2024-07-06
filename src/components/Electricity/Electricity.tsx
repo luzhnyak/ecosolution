@@ -18,7 +18,7 @@ const Electricity = () => {
   }, []);
 
   return (
-    <section className={css.section}>
+    <section className="section">
       <div className={css.titleWrapper}>
         <Title title="Electricity we produced for all time" />
       </div>

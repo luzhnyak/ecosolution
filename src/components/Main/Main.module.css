@@ -1,3 +1,7 @@
+.section {
+  scroll-margin-top: 120px;
+}
+
 .headerSection {
   display: grid;
   grid-template-columns: auto;

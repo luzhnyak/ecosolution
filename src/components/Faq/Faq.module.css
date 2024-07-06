@@ -1,7 +1,6 @@
-.section {
+.sectionWrapper {
   display: grid;
   grid-template-areas: "title" "questions" "btn";
-  margin-bottom: 36px;
 }
 
 .titleWrapper {
@@ -36,7 +35,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section {
+  .sectionWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto;
@@ -44,14 +43,12 @@
       "questions title"
       "questions btn";
     gap: 24px;
-    margin-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .section {
+  .sectionWrapper {
     gap: 48px;
-    margin-bottom: 120px;
   }
 
   .titleWrapper {

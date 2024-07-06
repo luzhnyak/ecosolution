@@ -18,7 +18,7 @@ const Cases = () => {
   const { casesRef } = useScroll();
 
   return (
-    <section ref={casesRef} id="cases">
+    <section className="section" ref={casesRef} id="cases">
       <div className={css.headerSection}>
         <div className={css.titleWrapper}>
           <Title title="Successful cases of our company" />

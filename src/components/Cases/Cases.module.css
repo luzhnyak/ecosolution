@@ -1,7 +1,3 @@
-.section {
-  margin-top: 0px;
-}
-
 .headerSection {
   margin-bottom: 19px;
 }
@@ -65,7 +61,6 @@
 
 .cardsWrapper {
   display: block;
-  margin-bottom: 36px;
 }
 
 .secondCardWrapper {
@@ -92,7 +87,6 @@
   .cardsWrapper {
     display: flex;
     gap: 24px;
-    margin-bottom: 107px;
   }
 
   .secondCardWrapper {
@@ -108,9 +102,5 @@
   .btn {
     width: 84px;
     height: 84px;
-  }
-
-  .cardsWrapper {
-    margin-bottom: 127px;
   }
 }

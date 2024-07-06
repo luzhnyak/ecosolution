@@ -1,6 +1,5 @@
-.section {
+.sectionWrapper {
   display: block;
-  margin-bottom: 36px;
 }
 
 .titleWrapper {
@@ -54,11 +53,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section {
+  .sectionWrapper {
     display: grid;
     grid-template-columns: 1fr 342px;
     grid-template-rows: auto auto;
-    margin-bottom: 100px;
   }
 
   .titleWrapper {
@@ -76,9 +74,8 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .section {
+  .sectionWrapper {
     grid-template-columns: 1fr 596px;
-    margin-bottom: 120px;
   }
 
   .titleWrapper {
