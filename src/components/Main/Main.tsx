@@ -12,7 +12,7 @@ const Main = () => {
   };
 
   return (
-    <section className={css.section} ref={mainRef}>
+    <section className={css.section} ref={mainRef} id="main">
       <div className={css.headerSection}>
         <h1 className={css.title}>RENEWABLE ENERGY For any task</h1>
         <div className={css.headerTextWrapper}>

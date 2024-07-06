@@ -7,6 +7,7 @@
   overflow: auto;
   background-color: var(--primary-color-25);
   backdrop-filter: blur(1px);
+  z-index: 1000;
 }
 
 .menu {
@@ -15,7 +16,7 @@
   grid-template-rows: auto 1fr auto;
   position: absolute;
   width: 320px;
-  height: 700px;
+  height: calc(100vh - 40px);
   top: 20px;
   right: 18px;
   padding: 24px;
@@ -29,6 +30,7 @@
   padding-top: 24px;
   margin: 0;
   border-top: 1px solid var(--white-color);
+  color: var(--white-color-25);
 }
 
 .item {
@@ -42,7 +44,7 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.04em;
-  color: var(--white-color);
+  color: currentColor;
   text-decoration: none;
   background-color: transparent;
   border: none;
@@ -51,10 +53,11 @@
 
 .link:hover,
 .link:focus {
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .btnClose {
+  width: 80px;
   display: flex;
   align-items: center;
   gap: 4px;

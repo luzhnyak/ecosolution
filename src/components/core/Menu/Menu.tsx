@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useScroll } from "../ScrollContext";
 import Icon from "../Icon/Icon";
@@ -11,6 +11,7 @@ interface IProps {
 }
 
 const Menu: FC<IProps> = ({ onClose }) => {
+  const [activeSection, setActiveSection] = useState("");
   const modalRef = useRef<HTMLDivElement | null>(null);
 
   const { mainRef, aboutRef, faqRef, contactsRef, casesRef } = useScroll();
@@ -48,6 +49,41 @@ const Menu: FC<IProps> = ({ onClose }) => {
     };
   }, [onClose]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const sectionRefs = {
+    mainRef,
+    aboutRef,
+    faqRef,
+    contactsRef,
+    casesRef,
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6, // Процент видимості секції на екрані для активації
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref?.current) observer.observe(ref.current);
+    });
+
+    return () => {
+      Object.values(sectionRefs).forEach((ref) => {
+        if (ref?.current) observer.unobserve(ref.current);
+      });
+    };
+  }, [sectionRefs]);
+
   return modalRoot ? (
     createPortal(
       <div className={css.backdrop}>
@@ -63,7 +99,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
               close
             </button>
             <ul className={css.list}>
-              <li className={css.item}>
+              <li className={activeSection === "main" ? "is-current" : ""}>
                 <button
                   className={css.link}
                   onClick={() => scrollTo(mainRef)}
@@ -78,7 +114,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   />
                 </button>
               </li>
-              <li className={css.item}>
+              <li className={activeSection === "about" ? "is-current" : ""}>
                 <button
                   className={css.link}
                   onClick={() => scrollTo(aboutRef)}
@@ -93,7 +129,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   />
                 </button>
               </li>
-              <li className={css.item}>
+              <li className={activeSection === "cases" ? "is-current" : ""}>
                 <button
                   className={css.link}
                   onClick={() => scrollTo(casesRef)}
@@ -108,7 +144,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   />
                 </button>
               </li>
-              <li className={css.item}>
+              <li className={activeSection === "faq" ? "is-current" : ""}>
                 <button
                   className={css.link}
                   onClick={() => scrollTo(faqRef)}
@@ -123,7 +159,7 @@ const Menu: FC<IProps> = ({ onClose }) => {
                   />
                 </button>
               </li>
-              <li className={css.item}>
+              <li className={activeSection === "contacts" ? "is-current" : ""}>
                 <button
                   className={css.link}
                   onClick={() => scrollTo(contactsRef)}

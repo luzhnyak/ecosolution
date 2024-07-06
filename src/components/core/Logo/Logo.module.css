@@ -5,6 +5,7 @@
   width: 269px;
   height: 40px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .title {

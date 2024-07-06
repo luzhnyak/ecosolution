@@ -8,7 +8,7 @@ const ContactUs = () => {
   const { contactsRef } = useScroll();
 
   return (
-    <section className={css.section} ref={contactsRef}>
+    <section className={css.section} ref={contactsRef} id="contacts">
       <div className={css.titleWrapper}>
         <Title title="Contact us" />
       </div>

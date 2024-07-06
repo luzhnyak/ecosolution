@@ -8,8 +8,16 @@
   grid-area: title;
 }
 
-.questionsWrapper {
+.list {
   grid-area: questions;
+  padding: 0;
+  margin: 24px 0 0 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0;
+  margin: 0 0 0 0;
 }
 
 .textWrapper {

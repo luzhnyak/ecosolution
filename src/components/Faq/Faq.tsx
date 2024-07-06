@@ -16,23 +16,24 @@ const Faq = () => {
   };
 
   return (
-    <section className={css.section} ref={faqRef}>
+    <section className={css.section} ref={faqRef} id="faq">
       <div className={css.titleWrapper}>
         <Title title="Frequently Asked Questions" />
       </div>
-      <div className={css.questionsWrapper}>
+      <ul className={css.list}>
         {questions.map(({ id, question, answer }) => {
           return (
-            <Accordion
-              key={id}
-              question={question}
-              answer={answer}
-              open={openId === id}
-              toggleDetails={() => toggleDetails(id)}
-            />
+            <li key={id}>
+              <Accordion
+                question={question}
+                answer={answer}
+                open={openId === id}
+                toggleDetails={() => toggleDetails(id)}
+              />
+            </li>
           );
         })}
-      </div>
+      </ul>
       <div className={css.textWrapper}>
         <p className={css.text}>Didn't find the answer to your question?</p>
         <ToContactBtn title="Contact Us" />

@@ -1,6 +1,20 @@
 .titleWrapper {
+  position: relative;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 72px;
+}
+
+.titleWrapper:after {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  display: block;
+  width: 1px;
+  bottom: 0;
+  left: 50%;
+  height: 48px;
+  transform: translate(-50%);
 }
 
 .counter {
@@ -33,21 +47,14 @@
   color: var(--primary-color);
 }
 
-.lineWrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.line {
-  width: 1px;
-  height: 87px;
-  border-right: 1px solid var(--secondary-color);
-}
-
 @media only screen and (min-width: 768px) {
   .titleWrapper {
     width: 368px;
+    padding-bottom: 111px;
+  }
+
+  .titleWrapper:after {
+    height: 87px;
   }
 
   .counter {
@@ -72,6 +79,11 @@
 @media only screen and (min-width: 1280px) {
   .titleWrapper {
     width: 491px;
+    padding-bottom: 103px;
+  }
+
+  .titleWrapper:after {
+    height: 87px;
   }
 
   .counter {

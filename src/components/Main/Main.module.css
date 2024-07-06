@@ -1,7 +1,3 @@
-.section {
-  margin-top: 146px;
-}
-
 .headerSection {
   display: grid;
   grid-template-columns: auto;
@@ -62,10 +58,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section {
-    margin-top: 168px;
-  }
-
   .headerSection {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
@@ -105,10 +97,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .section {
-    margin-top: 200px;
-  }
-
   .title {
     width: 485px;
     font-size: 64px;

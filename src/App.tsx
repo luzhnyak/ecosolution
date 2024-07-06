@@ -15,7 +15,7 @@ function App() {
     <ScrollProvider>
       <div className="container">
         <Header />
-        <main>
+        <main className="main">
           <Main />
           <About />
           <Electricity />

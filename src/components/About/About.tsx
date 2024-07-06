@@ -7,7 +7,7 @@ const About = () => {
   const { aboutRef } = useScroll();
 
   return (
-    <section className={css.section} ref={aboutRef}>
+    <section className={css.section} ref={aboutRef} id="about">
       <div className={css.headerSection}>
         <div className={css.titleWrapper}>
           <Title title="Main values of our company" />
@@ -22,47 +22,58 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className={css.cardWrapper}>
-        <Card
-          title="Openness"
-          text="to the world, people, new ideas and projects"
-          icon="icon-maximize-circle"
-        />
-        <Card
-          title="Responsibility"
-          text="we are aware that the results of our work have an impact on our lives and the lives of future generations"
-          icon="icon-global-edit"
-        />
-        <img
-          className={css.img}
-          src="/ecosolution/imgs/values/wind-farms-fields.jpg"
-          srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
-          alt="wind farms fields"
-          width={596}
-          height={339}
-          loading="lazy"
-        />
-
-        <img
-          className={css.img}
-          src="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg"
-          srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
-          alt="man worker firld by solar panels"
-          width={596}
-          height={339}
-          loading="lazy"
-        />
-        <Card
-          title="Innovation"
-          text="we use the latest technology to implement non-standard solutions"
-          icon="icon-cpu-charge"
-        />
-        <Card
-          title="Quality"
-          text="we do not strive to be the first among others, but we want to be the best in our business"
-          icon="icon-ranking"
-        />
-      </div>
+      <ul className={css.list}>
+        <li>
+          <Card
+            title="Openness"
+            text="to the world, people, new ideas and projects"
+            icon="icon-maximize-circle"
+          />
+        </li>
+        <li>
+          <Card
+            title="Responsibility"
+            text="we are aware that the results of our work have an impact on our lives and the lives of future generations"
+            icon="icon-global-edit"
+          />
+        </li>
+        <li className={css.imgItem}>
+          <img
+            className={css.img}
+            src="/ecosolution/imgs/values/wind-farms-fields.jpg"
+            srcSet="/ecosolution/imgs/values/wind-farms-fields.jpg 1x, /ecosolution/imgs/values/wind-farms-fields@2x.jpg 2x"
+            alt="wind farms fields"
+            width={596}
+            height={339}
+            loading="lazy"
+          />
+        </li>
+        <li className={css.imgItem}>
+          <img
+            className={css.img}
+            src="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg"
+            srcSet="/ecosolution/imgs/values/man-worker-firld-by-solar-panels.jpg 1x, /ecosolution/imgs/values/man-worker-firld-by-solar-panels@2x.jpg 2x"
+            alt="man worker firld by solar panels"
+            width={596}
+            height={339}
+            loading="lazy"
+          />
+        </li>
+        <li>
+          <Card
+            title="Innovation"
+            text="we use the latest technology to implement non-standard solutions"
+            icon="icon-cpu-charge"
+          />
+        </li>
+        <li>
+          <Card
+            title="Quality"
+            text="we do not strive to be the first among others, but we want to be the best in our business"
+            icon="icon-ranking"
+          />
+        </li>
+      </ul>
     </section>
   );
 };

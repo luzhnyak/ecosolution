@@ -10,7 +10,7 @@ const BurgerBtn = () => {
     <>
       <button
         className={css.btn}
-        onClick={() => setIsShowMenu(!isShowMenu)}
+        onClick={() => setIsShowMenu(true)}
         aria-label="Menu"
         type="button"
       >

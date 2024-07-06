@@ -12,20 +12,23 @@
   margin-bottom: 24px;
 }
 
-.headerText {  
+.headerText {
   letter-spacing: -0.04em;
   line-height: 19px;
 }
 
-.cardWrapper {
+.list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
   gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-bottom: 48px;
 }
 
-.img {
+.imgItem {
   display: none;
 }
 
@@ -53,13 +56,16 @@
     width: 342px;
   }
 
-  .cardWrapper {
+  .list {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .img {
+  .imgItem {
     display: block;
     grid-column: span 2;
+  }
+
+  .img {
     width: 342px;
     height: 197px;
   }
@@ -86,7 +92,7 @@
     width: 459px;
   }
 
-  .cardWrapper {
+  .list {
     gap: 48px;
   }
 

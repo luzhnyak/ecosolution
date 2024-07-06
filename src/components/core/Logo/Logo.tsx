@@ -2,7 +2,7 @@ import css from "./Logo.module.css";
 
 function Logo() {
   return (
-    <div className={css.wrapper}>
+    <a className={css.wrapper} href="/">
       <img
         className={css.img}
         src="/ecosolution/icons/logo.svg"
@@ -14,7 +14,7 @@ function Logo() {
       <span className={css.text}>
         <span className={css.green}>GREEN</span>ERGY FOR LIFE
       </span>
-    </div>
+    </a>
   );
 }
 

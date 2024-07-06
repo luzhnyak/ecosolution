@@ -23,10 +23,6 @@ const Electricity = () => {
         <Title title="Electricity we produced for all time" />
       </div>
 
-      <div className={css.lineWrapper}>
-        <div className={css.line}></div>
-      </div>
-
       <p className={css.counter}>
         <span className={css.value}>{formatNumberWithDots(count)}</span>{" "}
         <span className={css.kwh}>kWh</span>

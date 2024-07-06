@@ -1,8 +1,22 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+  z-index: 100;
+}
+
+.headerWrapper {
+  width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 36px;
+  padding: 36px 0;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+  z-index: 100;
 }
 
 .wrapperBtns {
@@ -17,13 +31,18 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .headerWrapper {
+    width: 708px;
+  }
+
   .toContactBtnWrapper {
     display: block;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .header {
-    padding-top: 24px;
+  .headerWrapper {
+    padding: 24px 0;
+    width: 1240px;
   }
 }
