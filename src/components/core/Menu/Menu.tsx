@@ -1,8 +1,8 @@
-import { createPortal } from "react-dom";
-import css from "./Menu.module.css";
 import { FC, useEffect, useRef } from "react";
-import Icon from "../Icon/Icon";
+import { createPortal } from "react-dom";
 import { useScroll } from "../ScrollContext";
+import Icon from "../Icon/Icon";
+import css from "./Menu.module.css";
 
 const modalRoot: Element | null = document.querySelector("#root-modal");
 

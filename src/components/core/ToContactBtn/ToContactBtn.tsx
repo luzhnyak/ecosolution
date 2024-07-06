@@ -1,7 +1,7 @@
 import { FC } from "react";
-import css from "./ToContactBtn.module.css";
-import Icon from "../Icon/Icon";
 import { useScroll } from "../ScrollContext";
+import Icon from "../Icon/Icon";
+import css from "./ToContactBtn.module.css";
 
 interface IProps {
   title: string;

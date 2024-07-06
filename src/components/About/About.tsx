@@ -1,5 +1,5 @@
-import Card from "../core/Card/Card";
 import { useScroll } from "../core/ScrollContext";
+import Card from "../core/Card/Card";
 import Title from "../core/Title/Title";
 import css from "./About.module.css";
 
@@ -40,6 +40,7 @@ const About = () => {
           alt="wind farms fields"
           width={596}
           height={339}
+          loading="lazy"
         />
 
         <img
@@ -49,6 +50,7 @@ const About = () => {
           alt="man worker firld by solar panels"
           width={596}
           height={339}
+          loading="lazy"
         />
         <Card
           title="Innovation"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "../Icon/Icon";
-import css from "./BurgerBtn.module.css";
 import Menu from "../Menu/Menu";
+import css from "./BurgerBtn.module.css";
 
 const BurgerBtn = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);

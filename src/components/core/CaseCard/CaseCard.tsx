@@ -1,6 +1,6 @@
 import { FC } from "react";
-import css from "./CaseCard.module.css";
 import Icon from "../Icon/Icon";
+import css from "./CaseCard.module.css";
 
 interface IProps {
   title: string;
@@ -20,6 +20,7 @@ const CaseCard: FC<IProps> = ({ title, text, image, image2x, date }) => {
         alt={title}
         width={596}
         height={296}
+        loading="lazy"
       />
       <div className={css.titleWrapper}>
         <h3 className={css.title}>{title}</h3>

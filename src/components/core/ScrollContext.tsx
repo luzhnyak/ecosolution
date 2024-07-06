@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useRef, ReactNode } from "react";
 
-// Типізація контексту
 interface ScrollContextType {
   aboutRef: React.RefObject<HTMLDivElement> | null;
   mainRef: React.RefObject<HTMLDivElement> | null;
@@ -9,7 +8,6 @@ interface ScrollContextType {
   contactsRef: React.RefObject<HTMLDivElement> | null;
 }
 
-// Створюємо контекст із дефолтним значенням
 const ScrollContext = createContext<ScrollContextType | undefined>(undefined);
 
 // eslint-disable-next-line react-refresh/only-export-components

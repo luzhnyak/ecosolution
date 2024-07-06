@@ -1,5 +1,5 @@
-import css from "./Header.module.css";
 import BurgerBtn from "../core/BurgerBtn/BurgerBtn";
+import css from "./Header.module.css";
 
 import Logo from "../core/Logo/Logo";
 import ToContactBtn from "../core/ToContactBtn/ToContactBtn";

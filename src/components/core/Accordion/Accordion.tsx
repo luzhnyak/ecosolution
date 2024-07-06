@@ -1,6 +1,6 @@
 import { FC } from "react";
-import css from "./Accordion.module.css";
 import Icon from "../Icon/Icon";
+import css from "./Accordion.module.css";
 
 interface IProps {
   question: string;

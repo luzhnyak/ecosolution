@@ -1,7 +1,7 @@
-import css from "./Footer.module.css";
+import { useScroll } from "../core/ScrollContext";
 import Logo from "../core/Logo/Logo";
 import Icon from "../core/Icon/Icon";
-import { useScroll } from "../core/ScrollContext";
+import css from "./Footer.module.css";
 
 const Footer = () => {
   const { mainRef } = useScroll();

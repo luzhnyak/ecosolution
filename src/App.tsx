@@ -1,3 +1,4 @@
+import { ScrollProvider } from "./components/core/ScrollContext";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import About from "./components/About/About";
@@ -6,8 +7,6 @@ import Cases from "./components/Cases/Cases";
 import Faq from "./components/Faq/Faq";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
-
-import { ScrollProvider } from "./components/core/ScrollContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

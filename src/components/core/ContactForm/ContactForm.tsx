@@ -1,15 +1,19 @@
-import WhiteBtn from "../LearnMoreBtn/WhiteBtn";
-import css from "./ContactForm.module.css";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { toast } from "react-toastify";
+import WhiteBtn from "../LearnMoreBtn/WhiteBtn";
+import css from "./ContactForm.module.css";
 
 const schema = yup
   .object({
-    name: yup.string().required(),
-    email: yup.string().email().required(),
-    phone: yup.string().required(),
+    name: yup.string().required("Name is required"),
+    email: yup
+      .string()
+      .email("Invalid email format")
+      .required("Email is required"),
+    phone: yup.string().required("Phone is required"),
     message: yup.string(),
   })
   .required();
@@ -26,20 +30,29 @@ const ContactForm = () => {
     reset,
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm<InputForm>({
     resolver: yupResolver(schema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
   });
+
+  useEffect(() => {
+    const savedData = localStorage.getItem("contactFormData");
+    if (savedData) {
+      const parsedData = JSON.parse(savedData);
+      reset(parsedData);
+    }
+  }, [reset]);
+
+  const formData = watch();
+  useEffect(() => {
+    localStorage.setItem("contactFormData", JSON.stringify(formData));
+  }, [formData]);
 
   const onSubmit = (data: InputForm) => {
     console.log(data);
     toast.success("Message sent successfully");
+    localStorage.removeItem("contactFormData");
     reset();
   };
 
@@ -87,7 +100,7 @@ const ContactForm = () => {
 
         <div className={css.inputWrapper}>
           <label className={css.label} htmlFor="textarea">
-            * Message:
+            Message:
           </label>
           <textarea
             id="textarea"

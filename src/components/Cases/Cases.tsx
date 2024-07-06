@@ -1,57 +1,14 @@
 import { useRef, useState } from "react";
-import CaseCard from "../core/CaseCard/CaseCard";
-import Icon from "../core/Icon/Icon";
-import Title from "../core/Title/Title";
-import css from "./Cases.module.css";
-import { useScroll } from "../core/ScrollContext";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
+import { useScroll } from "../core/ScrollContext";
+import CaseCard from "../core/CaseCard/CaseCard";
+import Icon from "../core/Icon/Icon";
+import Title from "../core/Title/Title";
 import "swiper/css";
-
-const cases = [
-  {
-    id: 1,
-    title: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
-    text: "Wind Power for auto field irrigation",
-    img: "/ecosolution/imgs/cases/beautiful-view-1.jpg",
-    img2x: "/ecosolution/imgs/cases/beautiful-view-1@2x.jpg",
-    date: "July 2023",
-  },
-  {
-    id: 2,
-    title: "Zhytomyr city Private Enterprise “Bosch”",
-    text: "Solar Panels for industrial use",
-    img: "/ecosolution/imgs/cases/beautiful-view-2.jpg",
-    img2x: "/ecosolution/imgs/cases/beautiful-view-2@2x.jpg",
-    date: "November 2023",
-  },
-  {
-    id: 3,
-    title: "Rivne city Private Enterprise “Biotech”",
-    text: "Thermal modules",
-    img: "/ecosolution/imgs/cases/beautiful-view-3.jpg",
-    img2x: "/ecosolution/imgs/cases/beautiful-view-3@2x.jpg",
-    date: "October 2023",
-  },
-  {
-    id: 4,
-    title: "Kherson city Private Enterprise “HealthyFarm”",
-    text: "Wind power",
-    img: "/ecosolution/imgs/cases/beautiful-view-4.jpg",
-    img2x: "/ecosolution/imgs/cases/beautiful-view-4@2x.jpg",
-    date: "September 2021",
-  },
-  {
-    id: 5,
-    title: "Zaporizhia city Private Enterprise “Biotech”",
-    text: "Mini nuclear stations",
-    img: "/ecosolution/imgs/cases/beautiful-view-5.jpg",
-    img2x: "/ecosolution/imgs/cases/beautiful-view-5@2x.jpg",
-    date: "May 2021",
-  },
-];
+import css from "./Cases.module.css";
+import cases from "../../data/cases.json";
 
 const Cases = () => {
   const [caseIdx, setCaseIdx] = useState(0);
@@ -116,6 +73,7 @@ const Cases = () => {
               spaceBetween: 24,
             },
             1280: {
+              slidesPerView: 2,
               spaceBetween: 48,
             },
           }}

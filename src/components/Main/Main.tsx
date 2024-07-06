@@ -1,7 +1,6 @@
-import css from "./Main.module.css";
-
-import WhiteBtn from "../core/LearnMoreBtn/WhiteBtn";
 import { useScroll } from "../core/ScrollContext";
+import WhiteBtn from "../core/LearnMoreBtn/WhiteBtn";
+import css from "./Main.module.css";
 
 const Main = () => {
   const { mainRef, casesRef } = useScroll();

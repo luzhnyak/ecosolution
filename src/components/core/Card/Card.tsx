@@ -1,6 +1,6 @@
 import { FC } from "react";
-import css from "./Card.module.css";
 import Icon from "../Icon/Icon";
+import css from "./Card.module.css";
 
 interface IProps {
   title: string;
