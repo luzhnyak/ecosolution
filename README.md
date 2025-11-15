@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Ecosolution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Development and implementation of renewable, environmentally friendly energy sources.
 
 Currently, two official plugins are available:
 
